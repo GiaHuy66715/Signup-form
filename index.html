@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+  </head>
+  <body>
+    <div class="form-container">
+      <form id="signup-form" class="form-field">
+        <h1 class="form-header">Create account</h1>
+        <div class="form-input-box">
+          <input required placeholder=" " type="text" class="form-input">
+          <label for="" class="form-label">
+            Your name
+          </label>
+        </div>
+
+        <div class="form-input-box">
+          <input required placeholder=" " type="email" class="form-input">
+          <label for="" class="form-label">
+            Your email
+          </label>
+        </div>
+
+        <div class="form-input-box">
+          <input required placeholder=" " type="password" class="form-input">
+          <label for="" class="form-label">
+            Your password
+          </label>
+        </div>
+
+        <div class="form-input-box">
+          <input required placeholder=" " type="password" class="form-input">
+          <label for="" class="form-label">
+            Repeat password
+          </label>
+        </div>
+        <div class="form-checkbox">
+          <input required type="checkbox" id="input-checkbox-signup">
+          <label for="input-checkbox-signup" class="label-checkbox">
+            I agree all in 
+            <a href="#">Terms of service</a>
+          </label>
+        </div>
+        <a href="#" type="submit" class="submit-btn">Sign up</a>
+        <div class="move-to-login">
+          <span class="to-signin">
+            Already have an account ?
+          </span>
+          <a id="js-move-signin" href="#" class="login-here">Login here</a>
+        </div>
+      </form>
+      
+      <form id="signin-form" class="form-field">
+        <h1 class="form-header">Have an account ?</h1>
+        <div class="form-input-box">
+          <input placeholder=" " type="text" class="form-input">
+          <label for="" class="form-label">
+            Username
+          </label>
+        </div>
+
+        <div class="form-input-box">
+          <input required placeholder=" " type="password" class="form-input">
+          <label for="" class="form-label">
+            Your password
+          </label>
+        </div>
+
+        <button type="submit" class="submit-btn">Sign in</button>
+
+        <div class="form-checkbox remember-me">
+          <div class="checkbox-rember-me">
+            <input required type="checkbox" id="input-checkbox-signin">
+            <label for="input-checkbox-signin" class="label-checkbox">
+              Remember me
+            </label>
+          </div>
+          <div class="forgot-password">
+            <a href="#">Forgot password</a>
+          </div>
+        </div>
+        
+        <div class="signin-alternative">
+          <p class="signin-with">Or sign in with</p>
+        </div>
+        <div class="signin-choice">
+          <a href="#">Facebook</a>
+          <a href="#">Google</a>
+        </div>
+      </form>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

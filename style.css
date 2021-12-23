@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 10px;
+    font-family: 'Nunito', sans-serif;
+}
+body {
+    background-image: url("https://preview.colorlib.com/theme/bootstrap/login-form-20/images/xbg.jpg.pagespeed.ic.tiVxeakBSd.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.form-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.form-field {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    line-height: 1.5;
+    width: 85%;
+    padding: 2rem;
+    border-radius: 10px;
+}
+.form-header {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 4rem;
+    text-transform: uppercase;
+}
+.form-input-box {
+    position: relative;
+    margin-bottom: 2rem;
+}
+.form-input {
+    padding: 1.5rem 2rem;
+    outline: none;
+    border: 1px solid #eee;
+    font-size: 1.4rem;
+    border-radius: 5px;
+    width: 100%;
+}
+.form-label {
+    position: absolute;
+    top: 50%;
+    left: 2.1rem;
+    transform: translateY(-50%);
+    font-size: 1.4rem;
+    user-select: none;
+    pointer-events: none;
+    transition: .25s ease;
+}
+.form-input:not(:placeholder-shown) + .form-label,
+.form-input:focus + .form-label {
+    top: 0;
+    padding: 0 1rem;
+    background-color: #fff;
+    color: #6a5af9;
+}
+.form-input:focus {
+    border-color: #6a5af9;
+}
+.form-checkbox {
+    display: flex;
+    align-items: center;
+    line-height: 1.5;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+}
+#input-checkbox-signup,
+#input-checkbox-signin {
+    margin-right: 1rem;
+    outline: none;
+}
+#input-checkbox-signin {
+    transform: translateY(2px);
+}
+.label-checkbox {
+    font-size: 1.4rem;
+    cursor: pointer;
+    user-select: none;
+}
+.label-checkbox a {
+    color: #000;
+}
+.submit-btn {
+    display: block;
+    width: 100%;
+    padding: 1.7rem 2rem;
+    border: 1px solid #ebebeb;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: #fff;
+    background-image: linear-gradient(to left, #74ebd5, #9face6);
+    cursor: pointer;
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-align: center;
+    transition: .25s linear;
+}
+.submit-btn:hover {
+    color: #000;
+    background-image: linear-gradient(
+        to right, 
+        #00C9FF,
+        #92FE9D
+    );
+}
+.move-to-login {
+    text-align: center;
+    font-size: 1.4rem;
+    margin-top: 2rem;
+}
+.login-here {
+    color: #000;
+}
+.remember-me {
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.forgot-password a {
+    font-size: 1.4rem;
+    color: #000;
+    text-decoration: none;
+}
+.signin-with {
+    text-align: center;
+    font-size: 1.8rem;
+    z-index: 1;
+}
+.signin-with::before {
+    content: '';
+    display: inline-block;
+    width: 2rem;
+    height: 1px;
+    background-color: #000;
+    transform: translate(-7px, -4px);
+}
+.signin-with::after {
+    content: '';
+    display: inline-block;
+    width: 2rem;
+    height: 1px;
+    background-color: #000;
+    transform: translate(7px, -4px);
+}
+.signin-choice {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+.signin-choice a {
+    width: 49%;
+    padding: 1.7rem 2rem;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.6rem;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid black;
+    transition: .25s ease;
+}
+.signin-choice a:hover {
+    color: #000;
+    background-color: #fff;
+}
+#signin-form {
+    display: none;
+}
